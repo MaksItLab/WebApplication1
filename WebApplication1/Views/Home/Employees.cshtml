@@ -1,0 +1,37 @@
+﻿@model IEnumerable<WebApplication1.Models.Employee>
+
+<!DOCTYPE html>
+<html>
+	<head>
+
+	</head>
+
+	<body>
+		<table>
+			<thead>
+				<tr>
+					<th>ID</th>
+					<th>FirstName</th>
+					<th>LastName</th>
+					<th>Patronymic</th>
+					<th>Age</th>
+				</tr>
+			</thead>
+			<tbody>
+				@foreach(var item in Model){
+					<tr>
+						<td>@item.ID</td>
+						<td>@item.FirstName</td>
+						<td>@item.LastName</td>
+						<td>@item.Patronymic</td>
+						<td>@item.Age</td>
+					</tr>
+				}
+			</tbody>
+		</table>
+
+		<a href="/">Главная страница</a>
+
+	</body>
+
+</html>
